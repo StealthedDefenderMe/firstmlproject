@@ -24,3 +24,8 @@
 # here we will see how to track data using DVC (Data version control): Open Source
 # Data could be huge so it'd be impossible to track it using git, so dvc
 # data could be saved in different db or hadoop
+# Only for development purpose (pip install dvc)
+# We'll only track files from artifacts
+# Why dvc? To track records in your .csv file
+# Commands : 
+<!-- dvc init -->
