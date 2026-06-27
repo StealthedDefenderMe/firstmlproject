@@ -29,3 +29,11 @@
 # Why dvc? To track records in your .csv file
 # Commands : 
 <!-- dvc init -->
+<!-- dvc add <path to file (artifacts.raw.csv)> --> 
+# a folder cannot be tracked by both dvc & git, make sure folder is removed from git tracking.
+# After this only .dvc files from the artifacts folder will be committed to git not original csv files
+# Whenever dvc tracks any file it creates md5 with respect to content of the file which is hash value
+# When csv content changes hash value also get changes
+# Thats why only .dvc files are tracked by git not the csv file
+# Files are getting tracked from the reference: .dvc/cache
+# Usually we store this data in remote location instead of local (s3 buckets) No matter how big it is
