@@ -38,3 +38,11 @@
 # Thats why only .dvc files are tracked by git not the csv file because this is reference of data from my local
 # Files are getting tracked from the reference: .dvc/cache
 # Usually we store this data in remote location instead of local (s3 buckets) No matter how big it is
+
+# T7 
+# Based on EDA & model trainigs
+# Install ipykernel for using notebook
+
+# T7
+# Everything will be in pipeline format (Data Trasnformation)
+# DT is more about feature engineering. Here we'll check everythign as T6 but in pipeline format
