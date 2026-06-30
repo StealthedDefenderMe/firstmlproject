@@ -3,6 +3,7 @@ from src.mlproject.logger import logging
 from src.mlproject.exception import CustomerException
 from src.mlproject.components.data_injection import DataInjection
 from src.mlproject.components.data_transformation import DataTransformation
+from src.mlproject.components.model_trainer import ModelTrainer
 
 if __name__=="__main__": #execution point / means: "Run the code below only when this file is executed directly."
     logging.info("The execution has started")
@@ -20,6 +21,10 @@ if __name__=="__main__": #execution point / means: "Run the code below only when
                 test_path
             )
         )
+
+        # Initiating model training code
+        model_trainer = ModelTrainer()
+        print(model_trainer.initiate_model_training(train_arr, test_arr))
 
     except Exception as e: #Here exception will capture the error message and sys will contain all lineno, filename
         logging.info("Custome exception occured in app.py")
