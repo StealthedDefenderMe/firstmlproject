@@ -46,3 +46,20 @@
 # T7
 # Everything will be in pipeline format (Data Trasnformation)
 # DT is more about feature engineering. Here we'll check everythign as T6 but in pipeline format
+
+
+# T10
+# To integrate mlflow tracking getting included
+# No matter how many times model trains with new data i should be knowing the r2_score & experiment & track model performance
+# To check its accuracy and evaluation metrics
+# Track all above things we use mlflow
+# mlFlow is open source platform for entire machine learning lifecycle
+# There is one public repository "dagshub"
+# Here we'll connect that specific repository & through that we'll track this repository
+# By using the URL we can clearly track the how model is performing with respect to every model training
+
+# mlFlow tracking details (Keep this in .env variable only)
+# MLFLOW_TRACKING_URI=https://dagshub.com/StealthedDefenderMe/firstmlproject.mlflow
+# MLFLOW_TRACKING_USERNAME=StealthedDefenderMe
+# MLFLOW_TRACKING_PASSWORD=4b56e764a67aba0f491ab04b86df49ccc7423c39
+# python script.py
